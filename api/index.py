@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return 'Teste'
 
-@app.route('/')
+@app.route('/ghibli')
 def antigo():
     df = pandas.read_csv('Ghibli characters.csv')
     antigo = df['movie'][df['release date'] == df['release date'].min()].drop_duplicates().to_string()

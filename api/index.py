@@ -1,7 +1,7 @@
 from flask import Flask
 import pandas as pd
 
-df = pd.read_csv('Ghibli characters.csv')
+#df = pd.read_csv('Ghibli characters.csv')
 
 app = Flask(__name__)
 

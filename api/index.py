@@ -9,7 +9,7 @@ def antigo():
     df = pandas.read_csv('Ghibli characters.csv')
     antigo = df['movie'][df['release date'] == df['release date'].min()].drop_duplicates().to_string()
     antigo = antigo[2:]
-    return 'O filme mais antigo é {antigo}'
+    return f'O filme mais antigo é {antigo}'
 
 @app.route('/about')
 def about():

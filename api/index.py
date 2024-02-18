@@ -4,8 +4,6 @@ from pandas import pandas
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return 'Teste'
 
 def antigo():
     df = pandas.read_csv('Ghibli characters.csv')
